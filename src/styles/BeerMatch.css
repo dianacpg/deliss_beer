@@ -1,12 +1,26 @@
+.underline {
+  border-bottom: 3px solid #264653;
+  margin: 20px;
+  border-radius: 4px;
+}
+
 #meat h2,
 #fish h2,
 #veggie h2 {
   text-align: center;
   color: #e76f51;
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 2px;
+  margin-bottom: 0;
+  text-decoration: none;
 }
 
 .plan_container {
   color: #264653;
+}
+
+#caution {
+  color: gray;
+  font-size: 10px;
+  padding-left: 30px;
 }

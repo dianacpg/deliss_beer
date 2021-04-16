@@ -17,9 +17,9 @@
 }
 
 li h2 {
-  color: #e76f51;
+  color: #f4a261;
   font-size: 42px;
-  text-shadow: white;
+  text-shadow: 1.5px 1.5px 0px #eb452b, 1.8px 1.8px 0px #efa032;
 }
 
 .text p {

@@ -54,18 +54,25 @@ const BeerMatch = ({ user }) => {
       {/* Beers will be displayed by the BeerList component, passing meat,fish and veggie arrays as props */}
 
       <div id="meat">
-        <h2>Meat</h2>
+        <div className="underline">
+          <h2>Meat</h2>
+        </div>
         {meat && <BeerList props={meat} user={user} />}{" "}
         {/* Conditional Rendering.Only output MealList when we have a value for breakfast. */}
       </div>
       <div id="fish">
-        <h2>Fish</h2>
+        <div className="underline">
+          <h2>Fish</h2>
+        </div>
         {fish && <BeerList props={fish} user={user} />}
       </div>
       <div id="veggie">
-        <h2>Veggies</h2>
+        <div className="underline">
+          <h2>Veggies</h2>
+        </div>
         {veggies && <BeerList props={veggies} user={user} />}
       </div>
+      <p id="caution"> * Be responsible. Drink carefully.</p>
     </div>
   );
 };
