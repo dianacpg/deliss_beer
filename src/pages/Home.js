@@ -51,8 +51,8 @@ const Home = () => {
             <h2> How it works?</h2>
 
             <ol>
-              <li>Register or Sign In</li>
-              <li>Access the Beer and Food Match Generator</li>
+              <li>Register or Sign In;</li>
+              <li>Access the Beer and Food Match Generator;</li>
               <li>Save your favorite beers!</li>
             </ol>
             <Link to="/signin">

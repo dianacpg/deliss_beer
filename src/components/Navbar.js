@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar">
+      <nav id="navbar">
         <div className="logo">
           <Link to="/" className="navbar-logo">
             {" "}
@@ -29,7 +29,7 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link to="/signin" className="nav-links" onClick={closeMobileMenu}>
-              <button>Sign in</button>
+              <button>Check your beers!</button>
             </Link>
           </li>
         </ul>
