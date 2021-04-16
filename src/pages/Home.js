@@ -38,15 +38,15 @@ const Home = () => {
         </div>
         <div className="about_card">
           <div className="about_text">
-            <h2> What is Deliss Beer?</h2>
+            <h2> What is the Deliss Beer?</h2>
 
             <p>
               What is the best beer for you meal? <br />
               Deliss Beer is an Automatic Beer and Food Match Generator that
               gives you the most suitable craft beer for your meal. You will
-              find options for meat, fish and veggie plates! Discover craft
-              beers from all around the world! You can also save your favorite
-              beers in your acount. Try it!
+              find options for meat, fish and veggies! Discover craft beers from
+              all around the world! You can also save your favorite beers in
+              your acount. Try it!
             </p>
             <h2> How it works?</h2>
 
