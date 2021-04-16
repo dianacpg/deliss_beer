@@ -54,10 +54,11 @@ const RegisterForm = ({ onRouteChange, updateLoadUser }) => {
               </label>
               <input
                 required="required"
-                className="pa2 input-reset ba bg-transparent w-100"
+                className="f7 pa2 input-reset ba bg-transparent w-100"
                 type="text"
                 name="name"
                 id="name"
+                placeholder="Enter your name"
                 onChange={onNameChange}
               />
             </div>
@@ -67,10 +68,11 @@ const RegisterForm = ({ onRouteChange, updateLoadUser }) => {
               </label>
               <input
                 required
-                className="pa2 input-reset ba bg-transparent w-100"
+                className="f7 pa2 input-reset ba bg-transparent w-100"
                 type="email"
                 name="email-address"
                 id="email-address"
+                placeholder="Enter your email"
                 onChange={onEmailChange}
               />
             </div>
@@ -80,10 +82,11 @@ const RegisterForm = ({ onRouteChange, updateLoadUser }) => {
               </label>
               <input
                 required
-                className="pa2 input-reset ba bg-transparent w-100"
+                className="f7 pa2 input-reset ba bg-transparent w-100"
                 type="password"
                 name="password"
                 id="password"
+                placeholder="Enter your password"
                 onChange={onPasswordChange}
               />
             </div>

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const SigninForm = ({ onRouteChange, updateLoadUser }) => {
   const [signInEmail, setSignInEmail] = useState("");
   const [signInPassword, setSigninPassword] = useState("");
+  const [errorLogin, setErrorLogin] = useState("");
 
   //to change the state to what the user writes in the signin form
   const onEmailChange = (event) => {
@@ -30,6 +31,8 @@ const SigninForm = ({ onRouteChange, updateLoadUser }) => {
         if (user.id) {
           updateLoadUser(user); //to update user details
           onRouteChange("mealplanner"); // to change state from signin to mealplanner and show the mealplan
+        } else {
+          setErrorLogin("Wrong Credentials!");
         }
       });
   };
@@ -42,15 +45,17 @@ const SigninForm = ({ onRouteChange, updateLoadUser }) => {
             <legend className="f4 fw6 ph0 mh0" style={{ color: " #2a9d8f" }}>
               Sign In
             </legend>
+
             <div className="mt3">
               <label className="db fw6 lh-copy f6" for="email-address">
                 Email
               </label>
               <input
-                className="pa2 input-reset ba bg-transparent w-100"
+                className="f7 pa2 input-reset ba bg-transparent w-100"
                 type="email"
                 name="email-address"
                 id="email-address"
+                placeholder="Enter your email"
                 onChange={onEmailChange}
               />
             </div>
@@ -59,10 +64,11 @@ const SigninForm = ({ onRouteChange, updateLoadUser }) => {
                 Password
               </label>
               <input
-                className=" pa2 input-reset ba bg-transparent w-100"
+                className="f7 pa2 input-reset ba bg-transparent w-100"
                 type="password"
                 name="password"
                 id="password"
+                placeholder="Enter your password"
                 onChange={onPasswordChange}
               />
             </div>
@@ -76,6 +82,7 @@ const SigninForm = ({ onRouteChange, updateLoadUser }) => {
               style={{ color: " #2a9d8f" }}
             />
           </div>
+          {errorLogin != "" && <p id="error">{errorLogin}</p>}
           <div className="lh-copy mt3">
             <p // when submit Signin it will change to register to show the registerForm
               onClick={() => onRouteChange("register")}
