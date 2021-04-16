@@ -1,0 +1,36 @@
+#footer {
+  position: absolute;
+  margin-top: -100vh;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  margin-top: 40px;
+}
+#footer a {
+  text-decoration: none;
+  color: #264653;
+}
+#footer a:hover {
+  text-decoration: none;
+  color: #d45333;
+}
+
+#footer .identification {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 850px) {
+  #footer {
+    position: relative;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #footer {
+    bottom: 10;
+  }
+}

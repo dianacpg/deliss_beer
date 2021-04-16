@@ -1,0 +1,144 @@
+.text_container {
+  position: relative;
+  top: 0;
+  height: 95vh;
+  width: 100%;
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-left-radius: 60% 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -webkit-box-shadow: 0px 15px 10px -15px rgba(132, 132, 132, 0.44);
+  -moz-box-shadow: 0px 15px 10px -15px rgba(132, 132, 132, 0.44);
+  box-shadow: 0px 15px 10px -15px rgba(132, 132, 132, 0.44);
+}
+
+li h2 {
+  color: #e76f51;
+  font-size: 42px;
+}
+
+.text p {
+  color: #b1492f;
+  size: 28px;
+  text-align: start;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-bottom: 60px;
+}
+
+.text ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#about_container {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+#about_container img {
+  height: 400px;
+  width: auto;
+  border-radius: 70px;
+  -webkit-box-shadow: -3px 1px 19px 2px rgba(132, 132, 132, 0.44);
+  box-shadow: -3px 1px 19px 2px rgba(132, 132, 132, 0.44);
+}
+
+.about_card {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_text h2 {
+  font-size: 35px;
+  padding: 0;
+}
+
+.about_card .about_text {
+  padding: 10px 100px 10px 100px;
+}
+
+.about_card p {
+  margin-top: 20px;
+  text-align: justify;
+  color: #264653;
+}
+
+.about_card ol {
+  list-style: none;
+  counter-reset: li;
+}
+
+.about_card li::before {
+  content: counter(li);
+  color: #f4a261;
+  font-family: "Abril Fatface", serif;
+  font-size: 20px;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.about_card li {
+  counter-increment: li;
+}
+
+@media screen and (max-width: 600px) {
+  li h2 {
+    color: #e76f51;
+    font-size: 28px;
+  }
+
+  .text {
+    margin-bottom: 100px;
+    margin-top: 90px;
+  }
+  #btn_home {
+    z-index: 1;
+  }
+  #about_container {
+    display: flex;
+    flex-direction: column;
+  }
+  #about_container .about_card {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #about_container img {
+    height: 250px;
+    border-radius: 40px;
+    margin: 30px;
+  }
+
+  #about_container .about_card p {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .about_card .about_text {
+    padding: 10px 30px 10px 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .text {
+    margin-bottom: 250px;
+  }
+}

@@ -1,0 +1,12 @@
+#meat h2,
+#fish h2,
+#veggie h2 {
+  text-align: center;
+  color: #e76f51;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.plan_container {
+  color: #264653;
+}

@@ -1,0 +1,22 @@
+#favcard {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.favorites h2 {
+  text-align: center;
+  margin: 30px;
+  color: #e76f51;
+}
+
+.favoritelist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 40px;
+  gap: 10px;
+  border: none;
+}
