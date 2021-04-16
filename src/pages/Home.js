@@ -42,11 +42,11 @@ const Home = () => {
 
             <p>
               What is the best beer for you meal? <br />
-              Deliss is an Automatic Beer and Food Match Generator that gives
-              you the most suitable craft beer for your meal. You will find
-              option for meat, fish and veggie plates! Discover craft beers from
-              all around the world! You can also save your favorite beers in
-              your acount. Try it!
+              Deliss Beer is an Automatic Beer and Food Match Generator that
+              gives you the most suitable craft beer for your meal. You will
+              find options for meat, fish and veggie plates! Discover craft
+              beers from all around the world! You can also save your favorite
+              beers in your acount. Try it!
             </p>
             <h2> How it works?</h2>
 

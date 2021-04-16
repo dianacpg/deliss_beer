@@ -89,7 +89,7 @@ li h2 {
   font-size: 20px;
   display: inline-block;
   width: 1em;
-  margin-left: -1em;
+  margin-left: 0em;
 }
 
 .about_card li {
