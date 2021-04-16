@@ -141,5 +141,6 @@ li h2 {
   .text {
     display: flex;
     align-items: center;
+    padding-bottom: 200px;
   }
 }

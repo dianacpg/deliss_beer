@@ -2,8 +2,8 @@
 
 Deliss Beer is an Automatic Beer and Food Match Generator that gives
 you the most suitable craft beer for your meal. You will find
-option for meat, fish and veggie meals! Discover craft beers from
-all around the world! You can also save your favorite beers in
+options for meat, fish and veggie meals! Discover craft beers from
+all around the world! You can also save your favorites in
 your acount.
 
 Live demo: https://deliss.netlify.app/
@@ -14,14 +14,14 @@ Live demo: https://deliss.netlify.app/
 - [x] Beers suitable for meat, fish and veggie meals;
 - [x] Random display of 4 beers from each beer-food-match category;
 - [x] Filter option for Alcohol by volume;
-- [x] Login and Register Authentication made by scrach;
+- [x] Login and Register Authentication made by scratch;
 - [x] User database for favorite beers;
 
 ## Build with:
 
 - JavaScript - React (create react app);
 - CSS, Tachyons;
-- EDAMAM recipe serch API;
+- Punk API;
 - Node.js, Express.js;
 - PostgreSQL;
 - Deployment: Backend- Heroku, Frontend- Netlify;
