@@ -1,17 +1,21 @@
-# Deliss
+# Deliss Beer
 
-Deliss is an automatic weekly meal plan generator app that gives you meal ideas for breakfast, lunch and dinner. 3 recipes for each day of the week! You can also save your favorite recipes in your acount.
+Deliss Beer is an Automatic Beer and Food Match Generator that gives
+you the most suitable craft beer for your meal. You will find
+option for meat, fish and veggie meals! Discover craft beers from
+all around the world! You can also save your favorite beers in
+your acount.
 
 Live demo: https://deliss.netlify.app/
 
 ## Features:
 
-- [x] Use of EDAMAM public API;
-- [x] Weekly meal plans for breakfast, lunch and dinner;
-- [x] Random recipe combinations for meal plan;
-- [x] Personalized meal plans for Vegetarians and Vegans;
+- [x] Use of Punk Api public API;
+- [x] Beers suitable for meat, fish and veggie meals;
+- [x] Random display of 4 beers from each beer-food-match category;
+- [x] Filter option for Alcohol by volume;
 - [x] Login and Register Authentication made by scrach;
-- [x] User database for favorite recipes;
+- [x] User database for favorite beers;
 
 ## Build with:
 
@@ -37,15 +41,16 @@ Live demo: https://deliss.netlify.app/
 
 ## Note:
 
-- With EDAMAM API, it is possible to filter recipes by choosing some labels like vegetarian, no-sugar, paleo, vegan, no-alcohol etc. But some recipes share contraditory labels so our filter won't work 100%.
-  Example: If we filter Vegetarian, we can receive a recipe with "vegetarian" and "piscitarian" labels.
+-The Punk API takes Brewdog's DIY Dog and turns it into a searchable, filterable API that's completely free and open source.
+
+- The API doesn't have links for more details of each beer.
 
 ## Setup:
 
 #### To run this project:
 
 ```
-$ git clone git@github.com:dianacpg/delissfrontend.git
+$ git clone git@github.com:dianacpg/deliss_beer.git
 $ cd your-project/
 $ npm install
 $ npm start
@@ -53,12 +58,6 @@ $ npm start
 ```
 
 ##### Then:
-
-- Register on [EDAMAM API](https://developer.edamam.com/) and get your keys;
-- Put your keys on the Environment Variables:
-
-* REACT_APP_EDAMAM_API_ID=
-* REACT_APP_EDAMAM_API_KEY=
 
 ** The back end part of Deliss App [here](https://github.com/dianacpg/delissbackend) **
 
@@ -68,4 +67,4 @@ $ npm start
 - Add user notifications on Register and login Autentication;
 - Grocery list for weekly meal plans
 
-![Alt Text](https://media.giphy.com/media/lKQ4k6JMgf1OoeIcVf/giphy.gif)
+![Alt Text](https://media.giphy.com/media/3o85xjSETVG3OpPyx2/giphy.gif)
