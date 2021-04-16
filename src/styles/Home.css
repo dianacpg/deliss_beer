@@ -139,6 +139,7 @@ li h2 {
 
 @media screen and (max-width: 375px) {
   .text {
-    margin-bottom: 250px;
+    display: flex;
+    align-items: center;
   }
 }
