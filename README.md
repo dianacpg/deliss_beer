@@ -31,7 +31,6 @@ Live demo: https://deliss.netlify.app/
 ```
 |-src/
   |-components/   - main components to be shared
-  |- img/         - images
   |-pages/        - containers that use shared components
   |-styles/       - css files
 |-App.js          - container component with routes
