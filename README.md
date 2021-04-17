@@ -1,4 +1,4 @@
-** At this moment The Punk API is down **
+** NOTE: At this moment Punk API is down. **
 
 # Deliss Beer
 
