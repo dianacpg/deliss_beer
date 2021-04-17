@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Aos from "aos";
 import "../styles/Home.css";
 import "aos/dist/aos.css";
-import person from "../img/person.jpg";
 
 const Home = () => {
   useEffect(() => {
