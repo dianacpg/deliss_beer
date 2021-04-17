@@ -1,9 +1,9 @@
-.text_container {
+.bg_container {
   position: relative;
   top: 0;
   height: 95vh;
   width: 100%;
-  background-image: url("./background.jpg");
+  background-image: url("https://images.pexels.com/photos/2574851/pexels-photo-2574851.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -17,15 +17,15 @@
 }
 
 li h2 {
-  color: #f4a261;
+  color: #eb452b;
   font-size: 42px;
-  text-shadow: 1.5px 1.5px 0px #eb452b, 1.8px 1.8px 0px #efa032;
 }
 
 .text p {
   color: #b1492f;
   size: 28px;
   text-align: start;
+  z-index: 2;
 }
 
 .text {
@@ -54,6 +54,7 @@ li h2 {
   border-radius: 70px;
   -webkit-box-shadow: -3px 1px 19px 2px rgba(132, 132, 132, 0.44);
   box-shadow: -3px 1px 19px 2px rgba(132, 132, 132, 0.44);
+  opacity: 0.9;
 }
 
 .about_card {
@@ -101,7 +102,6 @@ li h2 {
 
 @media screen and (max-width: 600px) {
   li h2 {
-    color: #e76f51;
     font-size: 28px;
   }
 

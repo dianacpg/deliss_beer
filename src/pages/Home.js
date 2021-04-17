@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <div id="home_container">
-      <div className="text_container">
+      <div className="bg_container">
         <div className="text">
           <ul>
             <li>
@@ -34,7 +34,10 @@ const Home = () => {
       </div>
       <div data-aos="fade-right" id="about_container">
         <div className="about_card">
-          <img src={person} alt="about_image" />
+          <img
+            src="https://images.pexels.com/photos/5530167/pexels-photo-5530167.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="about_image"
+          />
         </div>
         <div className="about_card">
           <div className="about_text">

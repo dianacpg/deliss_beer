@@ -90,6 +90,7 @@ a {
   display: inline-block;
   cursor: pointer;
   box-shadow: 0.3px 1.3px 0px rgba(132, 132, 132, 0.44);
+  z-index: 999;
 }
 
 #btn_home:hover {

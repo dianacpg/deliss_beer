@@ -16,11 +16,9 @@
 }
 
 .navbar-logo h1 {
-  color: #e76f51;
   cursor: pointer;
   font-size: 25px;
   margin: 0;
-  text-shadow: 1.3px 1.3px 0px rgba(132, 132, 132, 0.44);
   text-decoration: none;
 }
 
