@@ -1,5 +1,3 @@
-** NOTE: Punk API is currently down. **
-
 # Deliss Beer
 
 Deliss Beer is an Automatic Beer and Food Match Generator that gives
