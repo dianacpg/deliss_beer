@@ -25,7 +25,7 @@ const CardBeer = ({ image, name, description, user }) => {
         <h3>{name} </h3>
         <p>{description}</p>
         <button id="btn_small" type="button">
-          <i class="fas fa-heart" onClick={() => onSaveRecipe()}></i>
+          <i className="fas fa-heart" onClick={() => onSaveRecipe()}></i>
         </button>
       </div>
     </div>

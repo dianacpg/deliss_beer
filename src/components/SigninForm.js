@@ -30,7 +30,7 @@ const SigninForm = ({ onRouteChange, updateLoadUser }) => {
         //after we post, if it matches with the email and password database, the response from the server will be user details. So if we receive an id that means it was the post === database
         if (user.id) {
           updateLoadUser(user); //to update user details
-          onRouteChange("mealplanner"); // to change state from signin to mealplanner and show the mealplan
+          onRouteChange("beermatch"); // to change state from signin to mealplanner and show the mealplan
         } else {
           setErrorLogin("Wrong Credentials!");
         }
@@ -42,12 +42,12 @@ const SigninForm = ({ onRouteChange, updateLoadUser }) => {
       <main className="pa4">
         <form className="measure">
           <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-            <legend className="f4 fw6 ph0 mh0" style={{ color: " #2a9d8f" }}>
+            <legend className="f4 fw6 ph0 mh0" style={{ color: " orange" }}>
               Sign In
             </legend>
 
             <div className="mt3">
-              <label className="db fw6 lh-copy f6" for="email-address">
+              <label className="db fw6 lh-copy f6" htmlFor="email-address">
                 Email
               </label>
               <input
@@ -60,7 +60,7 @@ const SigninForm = ({ onRouteChange, updateLoadUser }) => {
               />
             </div>
             <div className="mv3">
-              <label className="db fw6 lh-copy f6" for="password">
+              <label className="db fw6 lh-copy f6" htmlFor="password">
                 Password
               </label>
               <input
@@ -74,20 +74,20 @@ const SigninForm = ({ onRouteChange, updateLoadUser }) => {
             </div>
           </fieldset>
           <div className="">
-            <input // when submit Signin it will change the state from signin to mealplanner so that the mealplanner in order to access the mealplan
+            <input // when submit Signin it will change the state from signin to beermatch so that the mealplanner in order to access the mealplan
               onClick={(e) => onSubmitSignIn(e)}
               className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
               type="submit"
               value="Sign in"
-              style={{ color: " #2a9d8f" }}
+              style={{ color: "black" }}
             />
           </div>
-          {errorLogin != "" && <p id="error">{errorLogin}</p>}
+          {errorLogin !== "" && <p id="error">{errorLogin}</p>}
           <div className="lh-copy mt3">
             <p // when submit Signin it will change to register to show the registerForm
               onClick={() => onRouteChange("register")}
               className="f6 link dim black db pointer"
-              style={{ color: " #2a9d8f" }}
+              style={{ color: "black" }}
             >
               Register
             </p>

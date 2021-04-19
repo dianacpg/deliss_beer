@@ -21,13 +21,15 @@ const BeerList = ({ props, user }) => {
   const fourBeersPerFood = shuffleBeerList.slice(0, 5);
   const finalBeerList = fourBeersPerFood.map((beer) => {
     return (
-      <CardBeer
-        image={beer.image_url}
-        name={beer.name}
-        description={beer.tagline}
-        // ingredients={recipe.recipe.ingredientLines}
-        user={user}
-      />
+      <div key={beer.name}>
+        <CardBeer
+          image={beer.image_url}
+          name={beer.name}
+          description={beer.tagline}
+          // ingredients={recipe.recipe.ingredientLines}
+          user={user}
+        />
+      </div>
     );
   });
   return <div className="beerlist">{finalBeerList}</div>;

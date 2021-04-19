@@ -12,8 +12,10 @@
   margin-bottom: 20px;
 }
 
-#form p {
+#form .presentation_text {
   margin: 5px;
+  color: orange;
+  font-weight: 600;
 }
 
 #form form {
@@ -38,5 +40,10 @@
   .option {
     margin: 5px;
     padding: 5px;
+  }
+
+  #form form {
+    display: flex;
+    flex-direction: column;
   }
 }

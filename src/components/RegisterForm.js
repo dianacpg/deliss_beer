@@ -45,11 +45,11 @@ const RegisterForm = ({ onRouteChange, updateLoadUser }) => {
       <main className="pa4">
         <form className="measure">
           <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-            <legend className="f4 fw6 ph0 mh0" style={{ color: " #2a9d8f" }}>
+            <legend className="f4 fw6 ph0 mh0" style={{ color: " orange" }}>
               Register
             </legend>
             <div className="mt3">
-              <label className="db fw6 lh-copy f6" for="name">
+              <label className="db fw6 lh-copy f6" htmlFor="name">
                 Name
               </label>
               <input
@@ -77,7 +77,7 @@ const RegisterForm = ({ onRouteChange, updateLoadUser }) => {
               />
             </div>
             <div className="mv3">
-              <label className="db fw6 lh-copy f6" for="password">
+              <label className="db fw6 lh-copy f6" htmlFor="password">
                 Password
               </label>
               <input
@@ -97,7 +97,7 @@ const RegisterForm = ({ onRouteChange, updateLoadUser }) => {
               className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
               type="submit"
               value="Register"
-              style={{ color: " #2a9d8f" }}
+              style={{ color: " #d45333;" }}
             />
           </div>
           <div className="lh-copy mt3">

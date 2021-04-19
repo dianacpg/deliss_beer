@@ -1,9 +1,9 @@
 .bg_container {
   position: relative;
   top: 0;
-  height: 95vh;
+  height: 80vh;
   width: 100%;
-  background-image: url("https://images.pexels.com/photos/2574851/pexels-photo-2574851.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-color: #f3a712;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -16,16 +16,9 @@
   box-shadow: 0px 15px 10px -15px rgba(132, 132, 132, 0.44);
 }
 
-li h2 {
-  color: #f4a261;
-  font-size: 42px;
-}
-
-.text p {
-  color: #b1492f;
-  size: 28px;
-  text-align: start;
-  z-index: 2;
+.navbar-logo h2 {
+  font-size: 24px;
+  font-family: "Abril Fatface", serif;
 }
 
 .text {
@@ -54,7 +47,6 @@ li h2 {
   border-radius: 70px;
   -webkit-box-shadow: -3px 1px 19px 2px rgba(132, 132, 132, 0.44);
   box-shadow: -3px 1px 19px 2px rgba(132, 132, 132, 0.44);
-  opacity: 0.75;
 }
 
 .about_card {
@@ -68,6 +60,7 @@ li h2 {
   font-size: 35px;
   padding: 0;
   padding-top: 20px;
+  color: #d45333;
 }
 
 .about_card .about_text {
@@ -77,7 +70,6 @@ li h2 {
 .about_card p {
   margin-top: 20px;
   text-align: justify;
-  color: #264653;
 }
 
 .about_card ol {
@@ -88,7 +80,7 @@ li h2 {
 
 .about_card li::before {
   content: counter(li);
-  color: #f4a261;
+  color: black;
   font-family: "Abril Fatface", serif;
   font-size: 20px;
   display: inline-block;
@@ -101,14 +93,6 @@ li h2 {
 }
 
 @media screen and (max-width: 600px) {
-  li h2 {
-    font-size: 28px;
-  }
-
-  .text {
-    margin-bottom: 100px;
-    margin-top: 90px;
-  }
   #about_container {
     display: flex;
     flex-direction: column;
@@ -142,5 +126,7 @@ li h2 {
     display: flex;
     align-items: center;
     padding-bottom: 200px;
+    align-content: center;
+    margin-top: 100px;
   }
 }

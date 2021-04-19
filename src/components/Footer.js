@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <div id="footer">
       <p>
-        This app was made with <i class="fas fa-heart"></i> by{" "}
+        This app was made with <i className="fas fa-heart"></i> by{" "}
         <a href="https://github.com/dianacpg" target="_blank" rel="noreferrer">
-          Dianacpg <i id="heart" class="fab fa-github"></i>
+          Dianacpg <i id="heart" className="fab fa-github"></i>
         </a>
       </p>
     </div>

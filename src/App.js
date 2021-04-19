@@ -11,7 +11,7 @@ function App() {
   return (
     <div id="App">
       <Router>
-        <div class="app-header">
+        <div className="app-header">
           <Navbar />
         </div>
         <div id="main-content">
@@ -25,7 +25,7 @@ function App() {
             ></Route>
           </Switch>
         </div>
-        <div class="app-footer">
+        <div className="app-footer">
           <Footer />
         </div>
       </Router>
