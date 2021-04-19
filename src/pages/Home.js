@@ -41,7 +41,7 @@ const Home = () => {
         </div>
         <div className="about_card">
           <div className="about_text">
-            <h2> What is the Deliss Beer?</h2>
+            <h2> What is Deliss Beer?</h2>
 
             <p>
               What is the best beer for you meal? <br />
