@@ -12,9 +12,8 @@ const UserFavorites = () => {
       .get(`https://guarded-peak-18752.herokuapp.com/favorites/${id}`)
       .then((res) => {
         setFavBeers(res.data);
-        console.log(favbeers);
       });
-  }, []);
+  }, [id]);
 
   const deleteBeer = (beer_id) => {
     axios
@@ -29,9 +28,9 @@ const UserFavorites = () => {
 
   const FavBeerList = favbeers.map((beer) => {
     return (
-      <div id="favcard">
+      <div id="favcard" key={beer.beer_id}>
         {" "}
-        {/* pass the id param to the delete recipe by recipe_id*/}
+        {/* pass the id param to the delete recipe by beer_id*/}
         <div className="card">
           {" "}
           <button

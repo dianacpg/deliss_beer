@@ -13,9 +13,7 @@ const Navbar = () => {
         <div className="logo">
           <Link to="/" className="navbar-logo">
             {" "}
-            <h1>
-              <i class="fas fa-beer"></i> DELISS BEER
-            </h1>
+            <h2>DELISS BEER</h2>
           </Link>
         </div>
         <div className="menu-icon" onClick={handleClick}>

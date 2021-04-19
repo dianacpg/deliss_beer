@@ -11,14 +11,14 @@
 .welcomeboard p {
   margin: 0;
   text-decoration: underline;
-  color: #264653;
+  color: #081c07;
   cursor: pointer;
 }
 
 .welcomeboard .hello {
   margin: 0;
   text-decoration: none;
-  color: #264653;
+  color: #081c07;
 }
 
 #error {

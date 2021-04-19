@@ -57,9 +57,9 @@ const Signin = () => {
 
   return (
     <div>
-      {route === "mealplanner" || user.id ? (
+      {route === "beermatch" || user.id ? (
         <div>
-          {/* Added a signout option that will change the state to sigin. This means that mealplanner will not be shown */}
+          {/* Added a signout option that will change the state to sigin. This means that beermatch will not be shown */}
           <div className="welcomeboard">
             <p className="hello">Hello {user.name}!</p>
 
@@ -73,7 +73,7 @@ const Signin = () => {
           </div>
           <BeerMatch user={user.id} />
         </div>
-      ) : route === "signin" ? ( // If the route state is "signin" it will show only the sign in form. If the route is not signin, that means the user is logged so the mealplanner will be shown
+      ) : route === "signin" ? ( // If the route state is "signin" it will show only the sign in form. If the route is not signin, that means the user is logged so the beermatch will be shown
         <SigninForm
           updateLoadUser={updateLoadUser}
           onRouteChange={onRouteChange}

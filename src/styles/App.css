@@ -39,26 +39,26 @@ h1 {
 }
 
 h2 {
-  color: #2a9d8f;
+  color: #081c07;
   font-size: 42px;
   padding: 2px;
   text-decoration: none;
 }
 
 h3 {
-  color: #264653;
+  color: #081c07;
   font-size: 28px;
 }
 
 p,
 li,
 a {
-  color: #264653;
+  color: #081c07;
   font-size: 14px;
   padding: 3px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 375px) {
   h1 {
     font-size: 50px;
   }
@@ -78,12 +78,16 @@ a {
   }
 }
 
+input:focus {
+  outline: none;
+}
+
 #btn_home {
   padding: 11px 25px;
   margin-top: 20px;
   border-radius: 80px;
   border: none;
-  background-color: #2a9d8f;
+  background-color: #d45333;
   color: white;
   font-size: 14px;
   text-align: center;
@@ -91,13 +95,14 @@ a {
   cursor: pointer;
   box-shadow: 0.3px 1.3px 0px rgba(132, 132, 132, 0.44);
   z-index: 999;
+  border: solid black 1px;
 }
 
 #btn_home:hover {
-  background-color: #d45333;
+  background-color: black;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 375px) {
   #btn_home {
     font-size: 11px;
     padding: 10px 20px;
@@ -111,7 +116,7 @@ a {
   margin-top: 5px;
   border-radius: 50%;
   border: none;
-  background-color: #2a9d8f;
+  background-color: #d45333;
   color: white;
   font-size: 9px;
   text-align: center;
@@ -120,11 +125,11 @@ a {
 }
 
 #btn_small:hover {
-  background-color: #6bbeb5;
+  background-color: #c04627;
 }
 
 #btn_small:active {
-  background-color: #217c72;
+  background-color: #c04627;
 }
 
 #btn_small:focus {

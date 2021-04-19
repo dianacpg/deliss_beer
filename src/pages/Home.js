@@ -22,6 +22,7 @@ const Home = () => {
                 for your meals
               </h2>
             </li>
+            <li> Best beers for fish, meat and veggies meals!</li>
             <li>
               {" "}
               <a href="#about_container">

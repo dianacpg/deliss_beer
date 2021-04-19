@@ -18,30 +18,27 @@ const BeerMatch = ({ user }) => {
       .get(URL + `food=chicken`)
       .then((res) => {
         setMeat(res.data);
-        console.log(res.data);
       })
       .catch(console.log);
-  }, [alcohol]);
+  }, [alcohol, URL]);
 
   useEffect(() => {
     axios
       .get(URL + `food=fish`)
       .then((res) => {
         setFish(res.data);
-        console.log(res.data);
       })
       .catch(console.log);
-  }, [alcohol]);
+  }, [alcohol, URL]);
 
   useEffect(() => {
     axios
       .get(URL + `food=vegetables`)
       .then((res) => {
         setVeggies(res.data);
-        console.log(res.data);
       })
       .catch(console.log);
-  }, [alcohol]); //it will only render if the user filters the alcohol
+  }, [alcohol, URL]); //it will only render if the user filters the alcohol
 
   const onFilterChange = (e) => {
     setAlcohol(e.target.value);
