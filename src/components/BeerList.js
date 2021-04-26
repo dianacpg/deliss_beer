@@ -26,7 +26,6 @@ const BeerList = ({ props, user }) => {
           image={beer.image_url}
           name={beer.name}
           description={beer.tagline}
-          // ingredients={recipe.recipe.ingredientLines}
           user={user}
         />
       </div>
