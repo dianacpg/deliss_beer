@@ -4,6 +4,28 @@ import Filter from "./Filter";
 import BeerList from "./BeerList";
 import "../styles/BeerMatch.css";
 
+//Function the shuffle arrays
+function shuffleArray(array) {
+  let i = array.length - 1;
+  for (; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+  return array;
+}
+
+//We got the beer arrays for each compatible food, but we need to shuffle the array in order to not to show the same beer order.
+// If we get only 4 beers for each food, we will not have diversity. So we can get 50 beers and then slice to display only 5
+// We will map each array and create a beer card for each beer
+
+function Managingarray(array) {
+  const shuffleBeerList = shuffleArray(array);
+  const finalBeersList = shuffleBeerList.slice(0, 5);
+  return finalBeersList;
+}
+
 // We will display 5 beer suggestions for mealtypes(meeat, fish and veggies)
 const BeerMatch = ({ user }) => {
   const [meat, setMeat] = useState(null);
@@ -17,7 +39,7 @@ const BeerMatch = ({ user }) => {
     axios
       .get(URL + `food=chicken`)
       .then((res) => {
-        setMeat(res.data);
+        setMeat(Managingarray(res.data));
       })
       .catch(console.log);
   }, [alcohol, URL]);
@@ -26,7 +48,7 @@ const BeerMatch = ({ user }) => {
     axios
       .get(URL + `food=fish`)
       .then((res) => {
-        setFish(res.data);
+        setFish(Managingarray(res.data));
       })
       .catch(console.log);
   }, [alcohol, URL]);
@@ -35,7 +57,7 @@ const BeerMatch = ({ user }) => {
     axios
       .get(URL + `food=vegetables`)
       .then((res) => {
-        setVeggies(res.data);
+        setVeggies(Managingarray(res.data));
       })
       .catch(console.log);
   }, [alcohol, URL]); //it will only render if the user filters the alcohol
@@ -54,20 +76,20 @@ const BeerMatch = ({ user }) => {
         <div className="underline">
           <h2>Meat</h2>
         </div>
-        {meat && <BeerList props={meat} user={user} />}{" "}
+        {meat && <BeerList beerlist={meat} user={user} />}{" "}
         {/* Conditional Rendering.Only output MealList when we have a value for breakfast. */}
       </div>
       <div id="fish">
         <div className="underline">
           <h2>Fish</h2>
         </div>
-        {fish && <BeerList props={fish} user={user} />}
+        {fish && <BeerList beerlist={fish} user={user} />}
       </div>
       <div id="veggie">
         <div className="underline">
           <h2>Veggies</h2>
         </div>
-        {veggies && <BeerList props={veggies} user={user} />}
+        {veggies && <BeerList beerlist={veggies} user={user} />}
       </div>
       <p id="caution"> * Be responsible. Drink carefully.</p>
     </div>
