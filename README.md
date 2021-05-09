@@ -64,6 +64,5 @@ $ npm start
 
 - More secure Login and Register Authentication with: minimum 8 characters, accepts ASCII and UNICODE characters. Or use a library;
 - Add user notifications on Register and login Autentication;
-- Grocery list for weekly meal plans
 
 ![Alt Text](https://media.giphy.com/media/3o85xjSETVG3OpPyx2/giphy.gif)
