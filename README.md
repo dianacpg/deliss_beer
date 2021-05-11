@@ -6,7 +6,7 @@ options for meat, fish and veggie meals! Discover craft beers from
 all around the world! You can also save your favorites in
 your acount.
 
-Live demo: https://deliss.netlify.app/
+Live demo: delissbeer.netlify.app/
 
 ## Features:
 
