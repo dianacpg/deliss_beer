@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Filter.css";
+import "./Filter.css";
 
 const Filter = ({ onFilterChange }) => {
   return (

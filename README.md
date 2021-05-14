@@ -30,9 +30,8 @@ Live demo: https://deliss.netlify.app/
 
 ```
 |-src/
-  |-components/   - main components to be shared
+  |-components/   - main components to be shared with each style
   |-pages/        - containers that use shared components
-  |-styles/       - css files
 |-App.js          - container component with routes
 |-index.js        - js entry file
 
@@ -62,8 +61,7 @@ $ npm start
 
 ### Future improvements
 
-- More secure Login and Register Authentication with: minimum 8 characters, accepts ASCII and UNICODE characters. Or use a library;
-- Add user notifications on Register and login Autentication;
-- Grocery list for weekly meal plans
+- More secure Register, Authentication with: minimum 8 characters, accepts ASCII and UNICODE characters. Or use a library;
+- Add more user notifications on Register and login Autentication;
 
 ![Alt Text](https://media.giphy.com/media/3o85xjSETVG3OpPyx2/giphy.gif)

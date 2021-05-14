@@ -1,4 +1,4 @@
-import "../styles/CardBeer.css";
+import "./CardBeer.css";
 
 const CardBeer = ({ image, name, description, user }) => {
   const onSaveRecipe = () => {

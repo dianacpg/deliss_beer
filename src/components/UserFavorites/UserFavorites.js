@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "../styles/FavoriteRecipes.css";
+import "./UserFavorites.css";
 
 const UserFavorites = () => {
   const { id } = useParams();

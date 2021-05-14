@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Aos from "aos";
-import "../styles/Home.css";
+import "./Home.css";
 import "aos/dist/aos.css";
 
 const Home = () => {
