@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SigninForm from "../components/SigninForm";
 import RegisterForm from "../components/RegisterForm";
 import BeerMatch from "../components/BeerMatch";
+import { UserContext } from "../components/UserContext";
 import "../styles/SignIn.css";
 
 const Signin = () => {
@@ -57,33 +58,35 @@ const Signin = () => {
 
   return (
     <div>
-      {route === "beermatch" || user.id ? (
-        <div>
-          {/* Added a signout option that will change the state to sigin. This means that beermatch will not be shown */}
-          <div className="welcomeboard">
-            <p className="hello">Hello {user.name}!</p>
+      <UserContext.Provider value={user}>
+        {route === "beermatch" || user.id ? (
+          <div>
+            {/* Added a signout option that will change the state to sigin. This means that beermatch will not be shown */}
+            <div className="welcomeboard">
+              <p className="hello">Hello {user.name}!</p>
 
-            <Link to={`/favorites/${user.id}`}>
-              <button id="btn_home" type="button">
-                {" "}
-                Check your Favorite Beers!
-              </button>
-            </Link>
-            <p onClick={() => onSignout()}>Signout</p>
+              <Link to={`/favorites/${user.id}`}>
+                <button id="btn_home" type="button">
+                  {" "}
+                  Check your Favorite Beers!
+                </button>
+              </Link>
+              <p onClick={() => onSignout()}>Signout</p>
+            </div>
+            <BeerMatch />
           </div>
-          <BeerMatch user={user.id} />
-        </div>
-      ) : route === "signin" ? ( // If the route state is "signin" it will show only the sign in form. If the route is not signin, that means the user is logged so the beermatch will be shown
-        <SigninForm
-          updateLoadUser={updateLoadUser}
-          onRouteChange={onRouteChange}
-        />
-      ) : (
-        <RegisterForm
-          updateLoadUser={updateLoadUser}
-          onRouteChange={onRouteChange}
-        />
-      )}
+        ) : route === "signin" ? ( // If the route state is "signin" it will show only the sign in form. If the route is not signin, that means the user is logged so the beermatch will be shown
+          <SigninForm
+            updateLoadUser={updateLoadUser}
+            onRouteChange={onRouteChange}
+          />
+        ) : (
+          <RegisterForm
+            updateLoadUser={updateLoadUser}
+            onRouteChange={onRouteChange}
+          />
+        )}
+      </UserContext.Provider>
     </div>
   );
 };

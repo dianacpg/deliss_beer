@@ -6,7 +6,7 @@ options for meat, fish and veggie meals! Discover craft beers from
 all around the world! You can also save your favorites in
 your acount.
 
-Live demo: https://deliss.netlify.app/
+Live demo: delissbeer.netlify.app/
 
 ## Features:
 
@@ -61,7 +61,7 @@ $ npm start
 
 ### Future improvements
 
-- More secure Register, Authentication with: minimum 8 characters, accepts ASCII and UNICODE characters. Or use a library;
-- Add more user notifications on Register and login Autentication;
+- More secure Login and Register Authentication with: minimum 8 characters, accepts ASCII and UNICODE characters. Or use a library;
+- Add user notifications on Register and login Autentication;
 
 ![Alt Text](https://media.giphy.com/media/3o85xjSETVG3OpPyx2/giphy.gif)

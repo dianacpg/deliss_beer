@@ -27,7 +27,7 @@ function Managingarray(array) {
 }
 
 // We will display 5 beer suggestions for mealtypes(meeat, fish and veggies)
-const BeerMatch = ({ user }) => {
+const BeerMatch = () => {
   const [meat, setMeat] = useState(null);
   const [fish, setFish] = useState(null);
   const [veggies, setVeggies] = useState(null);
@@ -76,20 +76,20 @@ const BeerMatch = ({ user }) => {
         <div className="underline">
           <h2>Meat</h2>
         </div>
-        {meat && <BeerList beerlist={meat} user={user} />}{" "}
+        {meat && <BeerList beerlist={meat} />}{" "}
         {/* Conditional Rendering.Only output MealList when we have a value for breakfast. */}
       </div>
       <div id="fish">
         <div className="underline">
           <h2>Fish</h2>
         </div>
-        {fish && <BeerList beerlist={fish} user={user} />}
+        {fish && <BeerList beerlist={fish} />}
       </div>
       <div id="veggie">
         <div className="underline">
           <h2>Veggies</h2>
         </div>
-        {veggies && <BeerList beerlist={veggies} user={user} />}
+        {veggies && <BeerList beerlist={veggies} />}
       </div>
       <p id="caution"> * Be responsible. Drink carefully.</p>
     </div>
