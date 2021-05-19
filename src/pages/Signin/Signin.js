@@ -30,7 +30,7 @@ const Signin = () => {
     localStorage.setItem("save-status", JSON.stringify(user));
   });
 
-  //this will change the route state, that will determine the validation to show mealplan ou not
+  //this will change the route state, that will determine the validation to show beer or not
   const onRouteChange = (route) => {
     setRoute(route);
   };
